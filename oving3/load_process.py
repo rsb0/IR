@@ -36,7 +36,9 @@ def load_and_process():
     f.close()
 
 
-    """loop over paragraphList and remove all elements containing the word "Gutenberg" """
+    """loop over paragraphList and remove all elements containing the word "Gutenberg".
+    Create list originalParagrahpList to hold the original paragraps with
+    uppercase, untokenized and unstemmed"""
     excludeGutenbergList = []
     for element in paragraphList:
         if "Gutenberg" not in element:
